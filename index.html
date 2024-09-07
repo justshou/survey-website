@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <h1 id="title">awesome survey</h1>
+      <p id="description">are you a gamer</p>
+
+      <form id="survey-form">
+        <div class="form-group">
+          <legend>Basic Information</legend>
+        <label id="name-label" for="name">Name: </label>
+        <input id="name" type="text" placeholder="John Doe" required />
+        <label id="email-label" for="email">Email: </label>
+        <input id="email" type="email" placeholder="example@gmail.com" required />
+        <label id="number-label" for="number" >Enter your phone number: </label>
+        <input placeholder="678-999-8212" id="number" type="number" min="10" max="10" />
+        </div>
+
+
+      <div class="form-group">
+        <legend>Which of these do you like?</legend>
+        <label for="chicken"><input name="test" type="checkbox" value="chicken" class="inline">Chicken</label>
+        <label for="eggs"><input name="test" type="checkbox" value="eggs" class="inline" >Eggs</label>
+        <label for="steak"><input name="test" type="checkbox" value="steak" class="inline">Steak</label>
+        <label for="chocolate"><input name="test" type="checkbox" value="chocolate" class="inline">Chocolate</label>
+        <label for="hotdog"><input name="test" type="checkbox" value="hotdog" class="inline">Hotdog</label>
+        <label for="fries"><input name="test" type="checkbox" value="fries" class="inline">Fries</label>
+        <label for="game">What game is your favorite?
+        <select id="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">valorant</option>
+          <option value="2">overwatch</option>
+          <option value="3">minecraft</option>
+          <option value="4">deadlock</option>
+          <option value="5">roblox</option>
+        </select>
+        </label>
+        </div>
+
+        <div class="form-group">
+        <label>If there are any other games you enjoy, enter them here.</label>
+        <textarea placeholder="My other favorite games are..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <legend>May we contact you?</legend>
+          <label for="yes"><input name="contact" type="radio" value="yes" class="inline" required>Yes</label>
+          <label for="no"><input name="contact" type="radio" value="no" class="inline">No</label>
+
+        </div>
+
+        <input type="submit" id="submit">
+      </form>
+
+      
+
+  </body>
+</html>
